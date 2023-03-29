@@ -11,4 +11,4 @@ app.post('/signUp',dbService.createUser)
 
 app.post('/login/',dbService.authenticateUser)
 
-app.listen(port||'5500',()=>console.log('server is listening in 5500'))
+app.listen(process.env.PORT||'5500',()=>console.log('server is listening in 5500'))
